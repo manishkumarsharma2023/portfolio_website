@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Sharma</title>
+    <link rel="shortcut icon" href="../assets/manish__fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: inherit;
+            /* border: 1px solid hsl(0, 98%, 41%); */
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            font-size: 18px;
+        }
+
+        /* ----------------------------- */
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        body {
+            display: flex;
+        }
+
+        #navbar {
+            position: sticky;
+            top: 0;
+            width: 20%;
+            height: 100vh;
+            background-color: #212121;
+        }
+
+        /* -------------------------- */
+        .hamburger_menu {
+            margin-right: 1rem;
+            display: inline-grid;
+            gap: .6rem;
+            cursor: pointer;
+        }
+
+        .hamburger_menu .line {
+            width: 35px;
+            height: 3px;
+            border-radius: 3px;
+            background-color: #ffffff;
+        }
+
+        /* -------------------------- */
+        .logo a {
+            display: grid;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .logo a span {
+            font-size: 22px;
+        }
+
+        .nav_items {
+            margin-top: 2rem;
+            list-style: none;
+            padding-inline: 2rem;
+        }
+
+        .nav_item+.nav_item {
+            margin-top: 1rem;
+        }
+
+        .nav_items a {
+            position: relative;
+        }
+
+        .nav_items a::after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #ffffff;
+            transition: width 350ms ease-in-out;
+        }
+
+        .nav_items a:hover::after {
+            width: 100%;
+        }
+
+        /* ------------------------------------- */
+        #main {
+            width: calc(100% - 20%);
+            padding-inline: 2rem;
+        }
+
+        /* ------------------------------------- */
+        #footer {
+            text-align: center;
+            padding-block: 1rem;
+        }
+
+        #footer .social_icons {
+            margin-block: 0;
+        }
+
+        #footer p {
+            margin-block: 0;
+        }
+
+        #footer a {
+            color: unset;
+        }
+
+        /* ------------------------------------- */
+        @media (min-width:769px) {
+            .hamburger_menu {
+                display: none;
+            }
+        }
+
+        @media (max-width:768px) {
+            body {
+                flex-direction: column;
+            }
+
+            #navbar {
+                width: unset;
+                background-color: unset;
+            }
+
+            .primary_navigation {
+                position: sticky;
+                top: 0;
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                background-color: #212121;
+                width: 100%;
+            }
+
+            .secondary_navigation {
+                position: absolute;
+                background-color: #212121;
+                width: 60%;
+                height: 100vh;
+                transform: translateX(-100%);
+                transition: transform 450ms ease-in-out;
+            }
+
+            .Visibility {
+                transform: translateX(0%);
+                transition: transform 450ms ease-in-out;
+            }
+
+            .logo a {
+                display: flex;
+                align-items: center;
+                padding: 0;
+            }
+
+            .logo a img {
+                width: 36px;
+            }
+
+            #main {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .main_content {
+                margin-top: -93vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="navbar">
+        <div class="primary_navigation">
+            <div class="hamburger_menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="logo">
+                <a href="../index.html" id="logo"><img src="../assets/manish__fav.png" alt="logo" width="48px">
+                    <span>Manish kr. Sharma</span></a>
+            </div>
+        </div>
+        <div class="secondary_navigation">
+            <ul class="nav_items">
+                <li class="nav_item"><a href="../index.html">Home</a></li>
+                <li class="nav_item"><a href="about.html">About</a></li>
+                <li class="nav_item"><a href="../Pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="main_content">
+            <h2>About Me</h2>
+            <p>I'm a student of information technology. Information technology (IT) is the use of computers and other
+                digital technologies to store, retrieve, transmit, and manipulate data. IT professionals use their
+                skills and knowledge to design, develop, manage, and support IT systems.</p>
+
+            <p>I'm interested in information technology which may have been sparked by my desire to understand how
+                computers work and how they can be used to solve real-world problems. I am interested in many different
+                career opportunities that are available in the IT field.</p>
+
+            <p>As a student of information technology, I'm likely learning about a variety of topics, including:</p>
+            <p>My interest in information technology and my willingness to learn new skills will make me a valuable
+                asset to any company. I am sure to have a successful career in the IT field.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore itaque voluptas illo voluptatum,
+                corporis eveniet vitae aperiam. Vel quae neque illo officiis quidem sit distinctio perferendis adipisci
+                dolorem ratione molestias iste, nisi sed nemo, temporibus facilis exercitationem animi facere qui. In
+                repellat asperiores exercitationem mollitia officia reiciendis tempore enim rem magnam laboriosam
+                deserunt, voluptatibus, odit laudantium tempora unde doloribus, magni molestias non quia accusantium.
+                Deleniti possimus dolores repellat quidem cum reprehenderit. Beatae ratione necessitatibus quaerat
+                perspiciatis nostrum mollitia consectetur optio ipsam cumque dolor, laborum, repellat soluta labore vero
+                culpa reiciendis reprehenderit fugit aperiam possimus quo odit corrupti? Ducimus, laboriosam excepturi!
+            </p>
+            <ul>
+                <li>Computer hardware and software</li>
+                <li>Programming languages and databases</li>
+                <li>Networking and security</li>
+                <li>Web development and mobile app development</li>
+                <li>Data science and machine learning</li>
+            </ul>
+
+            <p>My studies will prepare him for a variety of careers in the IT field. I could work as a web developer,
+                data scientist, machine learning engineer, network engineer, security engineer, or IT manager.</p>
+
+            <p>My interest in information technology and my willingness to learn new skills will make me a valuable
+                asset to any company. I am sure to have a successful career in the IT field.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore itaque voluptas illo voluptatum,
+                corporis eveniet vitae aperiam. Vel quae neque illo officiis quidem sit distinctio perferendis adipisci
+                dolorem ratione molestias iste, nisi sed nemo, temporibus facilis exercitationem animi facere qui. In
+                repellat asperiores exercitationem mollitia officia reiciendis tempore enim rem magnam laboriosam
+                deserunt, voluptatibus, odit laudantium tempora unde doloribus, magni molestias non quia accusantium.
+                Deleniti possimus dolores repellat quidem cum reprehenderit. Beatae ratione necessitatibus quaerat
+                perspiciatis nostrum mollitia consectetur optio ipsam cumque dolor, laborum, repellat soluta labore vero
+                culpa reiciendis reprehenderit fugit aperiam possimus quo odit corrupti? Ducimus, laboriosam
+                excepturi!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore itaque voluptas illo
+                voluptatum, corporis eveniet vitae aperiam. Vel quae neque illo officiis quidem sit distinctio
+                perferendis adipisci dolorem ratione molestias iste, nisi sed nemo, temporibus facilis exercitationem
+                animi facere qui. In repellat asperiores exercitationem mollitia officia reiciendis tempore enim rem
+                magnam laboriosam deserunt, voluptatibus, odit laudantium tempora unde doloribus, magni molestias non
+                quia accusantium. Deleniti possimus dolores repellat quidem cum reprehenderit. Beatae ratione
+                necessitatibus quaerat perspiciatis nostrum mollitia consectetur optio ipsam cumque dolor, laborum,
+                repellat soluta labore vero culpa reiciendis reprehenderit fugit aperiam possimus quo odit corrupti?
+                Ducimus, laboriosam excepturi!</p>
+        </div>
+
+        <section id="footer">
+            <div class="social_icons">
+                <a href=""><img src="../assets/facebook.png" alt="facebook" width="24px"></a>
+                <a href=""><img src="../assets/twitter.png" alt="twitter" width="24px"></a>
+                <a href=""><img src="../assets/instagram.png" alt="instagram" width="24px"></a>
+            </div>
+            <p>Made With ♥️ By a <a href="../index.html">Manish Sharma</a></p>
+        </section>
+    </section>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>
